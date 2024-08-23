@@ -17,30 +17,32 @@ body {
 }
 
 .menu-icon {
-    display: none;  /* Hidden by default, only shown on small screens */
+    display: none;
     cursor: pointer;
 }
 
-.sidebar {
+.sidebar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background-color: #444;
-    width: 100%;  /* Full width on mobile, adjusted in media query for desktop */
 }
 
 .sidebar li {
-    padding: 10px;
-    border-bottom: 1px solid #555;
+    float: left;
 }
 
 .sidebar li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-.sidebar li:last-child {
-    border-bottom: none;
+.sidebar li a:hover {
+    background-color: #555;
 }
 
 @media (min-width: 600px) {
