@@ -24,6 +24,10 @@ body {
     display: none;  /* Hidden by default, only shown on small screens */
     cursor: pointer;
     font-size: 24px;
+    position: fixed; /* Keeps the menu icon fixed at the top of the page */
+    top: 10px;      /* Aligns with the navbar */
+    right: 20px;    /* Keeps it aligned with the right side of the screen */
+    z-index: 1001;  /* Ensure it stays above other elements */
 }
 
 .sidebar {
