@@ -74,7 +74,22 @@ footer {
 }
 
 @media (max-width: 599px) {
+    .menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+
     .sidebar {
-        display: none; /* Ensure the menu icon is not displayed on large screens */
+        display: none; /* Initially hide the sidebar on small screens */
+        position: fixed; /* Fixed to allow overlay */
+        width: 100%; /* Full width */
+        height: 100vh; /* Full viewport height */
+        top: 0;
+        left: 0;
+        background-color: #333;
+        flex-direction: column;
+    }
+
+    .sidebar li {
+        display: block; /* Stack vertically */
     }
 }
