@@ -126,7 +126,4 @@ footer {
         display: flex; /* Show the sidebar when active */
     }
 
-    header {
-        padding-top: 240px;
-    }
 }
