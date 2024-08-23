@@ -1,6 +1,6 @@
 function toggleMenu() {
-    var sidebar = document.querySelector('.mobile-sidebar');
-    sidebar.classList.toggle('active');
+    var mobsidebar = document.querySelector('.mobile-sidebar');
+    mobsidebar.classList.toggle('active');
 }
 
 window.onscroll = function() {toggleNavbarOpacity()};
