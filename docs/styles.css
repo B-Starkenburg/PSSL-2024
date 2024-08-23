@@ -6,6 +6,11 @@ body {
     background-color: #f4f4f4;
 }
 
+.menu-icon {
+    display: none;  /* Hidden by default, only shown on small screens */
+    cursor: pointer;
+    position: fixed;
+}
 
 .sidebar {
     position: fixed;
@@ -65,12 +70,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-@media (min-width: 600px) {
-    .menu-icon {
-        display: none; /* Ensure the menu icon is not displayed on large screens */
-    }
 }
 
 @media (max-width: 599px) {
