@@ -1,5 +1,5 @@
 function toggleMenu() {
-    var sidebar = document.querySelector('.sidebar');
+    var sidebar = document.querySelector('.mobile-sidebar');
     sidebar.classList.toggle('active');
 }
 
