@@ -17,18 +17,19 @@ body {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     transition: background-color 0.3s ease; /* Smooth transition for background color */
 
 }
 
 .menu-icon {
+    background-color: transparent;
     display: none;  /* Hidden by default, only shown on small screens */
     cursor: pointer;
     font-size: 20px;
     position: fixed; /* Keeps the menu icon fixed at the top of the page */
     top: 10px;      /* Aligns with the navbar */
-    right: 20px;    /* Keeps it aligned with the right side of the screen */
+    left: 20px;    /* Keeps it aligned with the right side of the screen */
     z-index: 1001;  /* Ensure it stays above other elements */
 }
 
@@ -73,14 +74,17 @@ body {
     left: 0;
     background-color: #333;
     flex-direction: column;
-    align-items: left;
-    justify-content: center;
+    align-items: flex-start; /* Align items to the start (left) */
+    justify-content: flex-start; /* Align items to the start (top) */
     padding: 20px;
 }
 
 .mobile-sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start; /* Align items to the start (left) */
 }
 
 .mobile-sidebar ul li {
@@ -88,7 +92,7 @@ body {
 }
 
 .mobile-sidebar ul li a {
-    width: 40%;
+    width: 100%; /* Adjust to take full width */
     text-align: left;
     color: #fff;
     text-decoration: none;
@@ -131,6 +135,10 @@ footer {
 @media (max-width: 599px) {
     .menu-icon {
         display: block; /* Show menu icon on small screens */
+    }
+
+    .neg-menu-icon {
+        display : none;
     }
 
     .sidebar {
