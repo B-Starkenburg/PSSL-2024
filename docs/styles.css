@@ -3,88 +3,78 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+
+.sidebar {
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
+    width: 100%;
+    background: #444;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
     z-index: 1000;
 }
 
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
 .sidebar ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
-    overflow: hidden;
-    background-color: #444;
+    margin: 0;
+    display: flex;
 }
 
-.sidebar li {
-    float: left;
+.sidebar ul li {
+    margin-left: 10px;
 }
 
-.sidebar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.sidebar ul li a {
+    color: #fff;
     text-decoration: none;
+    padding: 10px 15px;
+    background: #555;
+    border-radius: 5px;
 }
 
-.sidebar li a:hover {
-    background-color: #555;
+.sidebar ul li a:hover {
+    background: #666;
+}
+
+header {
+    padding-top: 60px; /* Ensures header content isn't hidden behind the fixed sidebar */
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (min-width: 600px) {
     .menu-icon {
         display: none; /* Ensure the menu icon is not displayed on large screens */
     }
-
-    .sidebar {
-        display: block; /* Always show the sidebar on larger screens */
-        position: relative; /* Regular position, not fixed */
-        width: auto; /* Width as needed */
-        background-color: transparent;
-        border-bottom: none;
-    }
-
-    .sidebar li {
-        display: inline; /* Horizontal layout for desktop */
-        border-bottom: none;
-    }
-
-    .sidebar li a {
-        padding: 10px 15px;
-    }
 }
 
 @media (max-width: 599px) {
-    .menu-icon {
-        display: block; /* Show menu icon on small screens */
-    }
-
     .sidebar {
-        display: none; /* Initially hide the sidebar on small screens */
-        position: fixed; /* Fixed to allow overlay */
-        width: 100%; /* Full width */
-        height: 100vh; /* Full viewport height */
-        top: 0;
-        left: 0;
-        background-color: #333;
-        flex-direction: column;
-    }
-
-    .sidebar li {
-        display: block; /* Stack vertically */
+        display: none; /* Ensure the menu icon is not displayed on large screens */
     }
 }
