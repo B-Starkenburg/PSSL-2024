@@ -114,7 +114,7 @@ header {
 }
 
 main {
-    flex: 1; 
+    min-height: 90%;
     margin: 20px;
     padding: 20px;
     background: #fff;
