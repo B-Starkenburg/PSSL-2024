@@ -123,14 +123,12 @@ main {
 }
 
 footer {
-    background-color: rgba(68, 68, 68, 0.8);
-    color: #fff;
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 10px 0;
-    bottom: 0;
+    padding: 10px;
     width: 100%;
-    position: fixed;
-    padding-top: 20px;
+    position: relative;
+    z-index: 100;
 }
 
 footer a {
