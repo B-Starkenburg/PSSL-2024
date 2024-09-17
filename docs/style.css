@@ -7,6 +7,57 @@ body {
     background-color: #f4f4f4;
 }
 
+.home-header {
+    position: relative;
+    background-image: url('Images/title.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.program-header {
+    position: relative;
+    background-image: url('Images/program.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.participants-header {
+    position: relative;
+    background-image: url('Images/participants.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.practical-header {
+    position: relative;
+    background-image: url('Images/practical.JPG'); /* Replace 'banner.jpg' with the correct image file name */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0; /* Increase padding to make the banner more prominent */
+    text-align: center;
+}
+
+.header-credit {
+    position: absolute;
+    bottom: 10px; /* Position it at the bottom */
+    right: 15px; /* Position it to the right */
+    font-size: 0.8em; /* Smaller, unobtrusive text */
+    color: rgba(255, 255, 255, 0.7); /* Semi-transparent white to blend nicely */
+    background-color: rgba(0, 0, 0, 0.3); /* Add a background for readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .navbar {
     background-color: transparent; /* Start as transparent */
     color: #fff;
