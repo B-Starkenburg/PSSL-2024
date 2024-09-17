@@ -106,15 +106,10 @@ body {
     background: #666;
 }
 
-header {
-    padding-top: 100 px; /* Ensures header content isn't hidden behind the fixed sidebar */
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
 
+  
 main {
+    margin-top: 500px;
     min-height: 90%;
     margin: 20px;
     padding: 20px;
