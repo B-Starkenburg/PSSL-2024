@@ -1,0 +1,139 @@
+\documentclass[
+  fontsize=11pt,
+  paper=a4,
+  parskip=half,
+  enlargefirstpage=on,    % More space on first page
+  fromalign=right,        % PLacement of name in letter head
+  % fromphone=on,           % Turn on phone number of sender
+  % fromemail=on,
+  % fromurl=on,
+  fromlogo=on,
+  fromrule=off,     % Rule after sender name in letter head
+  addrfield=on,           % Adress field for envelope with window
+  backaddress=off,         % Sender address in this window
+  subject=beforeopening,  % Placement of subject
+  locfield=off,        % Additional field for sender
+  foldmarks=off,           % Print foldmarks
+  pagenumber=off
+]{scrlttr2}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage{url}
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+% \setkomafont{fromname}{\sffamily \LARGE}
+% \setkomafont{fromaddress}{\raggedright}
+% \setkomafont{pagenumber}{\sffamily}
+% \setkomafont{subject}{\bfseries}
+% \setkomafont{backaddress}{\mdseries}
+
+% \LoadLetterOption{DIN}
+% \setkomavar{fromname}{Dr.~Henning Basold}
+\setkomavar{fromlogo}{%
+  \includegraphics{Logo-UL-LIACS-CMYK}}
+\setkomavar{fromaddress}{%
+  \begin{minipage}[b]{45mm}
+    \raggedright
+    Faculty of Science\\
+    LIACS\\
+    Dr.~Chase Ford
+  \end{minipage}
+}
+\setkomavar{fromphone}{+31 6 14908650}
+\setkomavar{fromemail}{m.c.ford@liacs.leidenuniv.nl}
+\setkomavar{urlseparator}[Web]{:~}
+\setkomavar{fromurl}{\small\url{https://www.universiteitleiden.nl/en/staffmembers/chase-ford}}
+% \setkomavar{backaddressseparator}{\enspace\textperiodcentered\enspace}
+\setkomavar{location}{%
+  \raggedright
+  Einsteinweg 55\\
+  2333 CC Leiden\\
+  The Netherlands\\
+  Phone: +31 6 14908650
+}
+\renewcommand*{\raggedsignature}{\raggedright}
+\setkomavar{signature}{%
+  \includegraphics[keepaspectratio,height=2cm]{signature}
+  \hspace{2cm}
+   \includegraphics[keepaspectratio,height=2cm]{signature-DDO}
+   \hspace{2cm}
+    \includegraphics[keepaspectratio,height=2cm]{berend_sign}\\ 
+    \vspace{5mm}
+  Dr.~Chase Ford
+  \qquad\qquad\qquad\quad~Dani\"{e}l Otten
+  \qquad\qquad\qquad\quad~Berend van Starkenburg \\
+  Organizers of PSSL 109 \\
+}
+% \setkomavar{place}{Leiden}
+\setkomavar{date}{\today}
+\setkomavar{enclseparator}{: }
+
+% \makeatletter
+% \@setplength{refvpos}{6cm}
+% \makeatother
+% \makeatletter
+% \setlength{\@tempskipa}{-4cm}%
+% \@addtoplength{toaddrheight}{\@tempskipa}
+% \makeatother
+
+\makeatletter
+\@setplength{firstheadvpos}{35pt}
+\@setplength{firstheadhpos}{24mm}
+\@setplength{firstheadwidth}{168mm}
+\@setplength{toaddrhpos}{24mm}
+\@setplength{toaddrvpos}{105pt}
+%\@setplength{toaddrvpos}{140pt}
+\@setplength{toaddrwidth}{144mm}
+\@setplength{lochpos}{18mm}
+\@setplength{locwidth}{45mm}
+\@setplength{locvpos}{140pt}
+\@setplength{refhpos}{48mm}
+\makeatother
+
+% \usepackage{scrlayer-scrpage}
+% \clearmainofpairofpagestyles
+% \chead{
+%   \includegraphics[height=63pt,keepaspectratio]{Logo-UL-LIACS-CMYK}
+%   \hfill
+%   \begin{minipage}[b]{56mm}
+%     \normalfont
+%     Faculty of Science\\
+%     Leiden Institute of Advanced Computer Science\\
+%     Dr.~Henning Basold
+%   \end{minipage}
+% }
+% \RedeclarePageStyleAlias{empty}{scrheadings}
+
+\begin{document}
+\begin{letter}{%
+    Lingyuan Ye \\
+    Department of Computer Science and Technology \\
+    University of Cambridge \\
+    \url{https://yelingyuan.fr/}
+  }
+  \setkomavar{subject}{%
+  \small{
+    Certificate of Participation in the 109th Peripatetic Seminar on 
+    Sheaves and Logic}
+  }
+  \opening{}
+
+  We hereby certify that
+  \begin{center}
+    \textbf{Lingyuan Ye}
+  \end{center}
+  participated in the 109th Peripatetic Seminar on Sheaves and Logic
+  (PSSL 109), 15-17th November~2024, in Leiden and has 
+  presented the work
+  \begin{center}
+    \textbf{Incompleteness and intentionality via universal property of arithmetic}
+  \end{center}
+  during the meeting.
+
+\vfill
+\closing{Yours faithfully,}
+\end{letter}
+\end{document}
